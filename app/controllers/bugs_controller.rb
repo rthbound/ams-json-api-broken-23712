@@ -16,7 +16,6 @@ class BugsController < ApplicationController
 
   # POST /bugs
   def create
-    binding.pry
     @bug = Bug.new(bug_params)
 
     if @bug.save
